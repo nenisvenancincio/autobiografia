@@ -1,1 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{ margin:0;
+    padding: 0;
+    box-sizing: border-box; 
+    text-decoration: none;
+    list-style: none;
+
+
+    
+}
+    body {
+        font-family:'poppins', sans-serif; }
+    :root {
+       --cor-fundo: #3f0168;
+       --cor-texto: #f0ebeb;
+       --cor-destaque: #d00277;
+       --degrade-bnt: linear-gradient(#fe9611, # ff5c00);
+       --cor-botao: #d00277;
+       --cor-botao-hover: #ffffff;
+     }
+     .background-gradient {
+         background-color: var(--cor-fundo) 
+     }
+     .container { max-width: 1440px;
+        margin: 0 5%;
+        padding:0 auto;}
+
+        .btn-gradiente {
+            padding: 10px 25px;
+            color:#d00277;
+            border: none;
+            cursor: pointer;
+            background-image: var(--degrade-bnt);
+           
+        }
+
+        nav { display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;}
+
+            .logo a{ 
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(247, 171, 29);
+     }
+
+     .ul { 
+        display: flex;
+        align-items: center;
+    }
+
+ .ul li{ 
+       margin: 0% 35px;
+       font-size: 15px;
+
+    }
+
+    .ul li{ 
+       color: black;
+        
+    }
+    main .container { 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+
+      
+    }
+    .main-text {
+       width: 50%;
+       color: rgb(196, 54, 3)
+
+    }
+    .main-text h1 {
+       font-size: 4.5rem;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+    .main-text div {
+       display: flex;
+       align-items: center;
+       margin-top: 20px;
+
+    }
+    .main-img {
+      width: 50%;}
+      .main-img img  {
+      width: 100%;}
