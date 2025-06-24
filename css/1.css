@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
 :root{
    --text-color: #1a1c20;
@@ -15,6 +14,8 @@
 body{
    background-color: #c7d2fe;
    font-family: 'poppins' sans-serif;
+   max-width: 1400px;
+   margin: 0 auto;
 }
 
 a{
@@ -58,8 +59,7 @@ nav .right a span{
    align-items: center;
    padding: 0 50px;
    margin: 50px 0;
-   gap 40px
-   margin-bottom: 100px;
+   gap: 40px
 }
 
 .hero-section .headshot {
@@ -122,6 +122,11 @@ nav .right a span{
 .hero-section .text h2{
    font-size: 30px;
 }
+
+.contact-section{
+   padding: 0 20px;
+   
+}
 }
 
 @media (max-width: 850px){
@@ -144,13 +149,11 @@ nav .right a span{
 
 .contact-section h2{
    font-size: 35px;
-   margin-bottom: 35px;
 
 }
 
 .contact-section .group{
    display: flex;
-   align-items: center;
    gap: 50 ;
 }
 
@@ -160,22 +163,42 @@ flex: 2;
 }
 
 .contact-section .group .text{
-flex: 8;
+flex: 3;
+margin-top: 20px;
+}
+.contact-section .group form{
+   flex: 3;
+   display: flex;
+   flex-direction: column;
 }
 
-.contact-section .group .person-details img{
-   width: 200px;
-   aspect-ratio: 1 / 1;
-   object-fit:cover ;
-   border-radius: 500px;
-   margin: bottom 10px; ;
+.contact-section .group form input
+.contact-section .group form textarea{
+   font-family: 'poppins' sans-serif;
+   border: 2px solid var(--link-color) ;
+   background-color: transparent;
+   padding: 10px ;
+   margin-bottom: 15px;
+   outline: none;
+   resize: none;
 }
 
-.contact-section .group .person-details p {
-   font-weight: 600;
+.contact-section .group form button{
+   font-size: 16px;
+   font-family: 'poppins' sans-serif;
+   background-color: var(--link-color);
+   border: none;
+   height: 50px;
+   cursor: pointer;
+   transition: 1s;
 }
 
-.contact-section .group .person-details p:last-child{
-   font-size: normal;
+.contact-section .group form button:hover{
+filter: brightness(.9)
+ 
+}
 
+.contact-section .group {
+  
+   flex-direction: column
 }
