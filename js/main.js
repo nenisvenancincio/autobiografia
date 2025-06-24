@@ -10,11 +10,7 @@ items.forEach(item => {
     item.style.display = 'flex';
    } else {
 item.style.display = 'none';
-   }
-
-   
-})
-})
+   }})})
 
 function formatString(value) {
     return value
