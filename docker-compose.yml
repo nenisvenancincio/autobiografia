@@ -1,7 +1,8 @@
 version: '3.7'
 
 services:
-nginx:
+ 
+ nginx:
     image: nginx
     ports:
       - "3000:80"
